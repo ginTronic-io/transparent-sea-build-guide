@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Device Build Guide</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      max-width: 800px;
+    }
+    h1 {
+      font-size: 2em;
+      margin-bottom: 1em;
+    }
+    h2 {
+      font-size: 1.4em;
+      margin-top: 2em;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.2em;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+    img {
+      max-width: 100%;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+    }
+    .important {
+      color: darkred;
+      font-weight: bold;
+    }
+    .note {
+      color: #555;
+      font-style: italic;
+    }
+    a {
+      color: #0645AD;
+    }
+  </style>
+</head>
+<body>
+  <h1>Device Build Guide</h1>
+
+  <h2>1: Solder Daisy Seed Pin Headers</h2>
+  <p>In this step you should solder the 2 20 pin headers from the daisy seed to the bottom of the board (applying solder to the top of the board).</p>
+  <p class="important">IMPORTANT: the longer pins of the headers should be on the bottom of the board.</p>
+  <p class="note">NOTE: It could be that the ground pin is a little harder to solder as it is attached to an analog ground plane, if this is the case, increase the soldering iron temp to around 380/400 and allow a little more time for it to heat up.</p>
+  <img src="images/image_1_1.jpg" alt="The headers">
+  <img src="images/image_1_2.jpg" alt="Correct Placement">
+  <img src="images/image_1_3.jpg" alt="Before Soldering">
+  <img src="images/image_1_4.jpg" alt="After soldering">
+
+  <h2>2: Attach 17 B10K Pots</h2>
+  <p>Unscrew the nuts and washers from the pots and keep them to one side then attach (don't solder yet) the 17 B10K pots to the top side of the board. They should clip in and stay clipped in. If the pins or legs of the pots are bend and not going in easily, use pliers to adjust them gently. See the diagram showing where to place them.</p>
+  <p class="important">IMPORTANT: The analog IN, OUT and FILTER Pots are different, do not get them confused. Check the diagram to see where to attach.</p>
+  <p class="note">NOTE: Keep the nut</p>
+  <img src="images/image_2_1.jpg" alt="Where to place the pots">
+  <img src="images/image_2_2.jpg" alt="Finished Placement">
+
+  <h2>3: Attach 2 A10K Stereo Pots</h2>
+  <p>Unscrew the nuts and washers from the 2 stereo pots and attach them in the same way as the other pots.</p>
+  <img src="images/image_3_1.jpg" alt="Placement">
+
+  <h2>4: Attach the center detent filter pot</h2>
+  <p>Unscrew the washer and nut from the pot and attach it to the filter position.</p>
+  <p class="important">IMPORTANT: Make sure the pot has a center detent!</p>
+
+  <h2>5: Attach the 8 MX Blue Switches</h2>
+  <p>Simply press the switches into position, they should be flush against the board.</p>
+  <p class="important">IMPORTANT: Sometimes they come with the pins a little bent, check before pushing and straighten gently with pliers if necessary.</p>
+  <img src="images/image_5_1.jpg" alt="Correct Placement">
+
+  <h2>6: Attach the 8 RGB LEDs</h2>
+  <p>The MX Blue switches have special slots for the LEDS and the legs of the LEDs go through the slot and then through the 4 holes in the PCB under the slot.</p>
+  <p class="important">IMPORTANT: The LEDs have 4 legs, the longer leg should be on the left side. See images and make sure they are correctly rotated!</p>
+  <p>Once the LED legs are through and the LED sits nicely in the slot, bend the legs back to hold it into place.</p>
+  <img src="images/image_6_1.jpg" alt="Correct Rotation">
+  <img src="images/image_6_2.jpg" alt="Correct rotation once pushed through the PCB">
+  <img src="images/image_6_3.jpg" alt="LED legs bent">
+
+  <h2>7: Prepare for soldering</h2>
+  <p>Once all the pots, switches and LEDs are attached, check that all the pots are as well aligned as you can get them (see images for examples). They don’t have to be perfect, but should be as good as you can get them.</p>
+  <p>Once you are happy, turn the PCB over and rest the PCB on the heads of the pots.</p>
+  <p>From this point on, be gentle with the PCB so not to knock any pots out of position.</p>
+  <p class="note">Perhaps a special Jig would be good to hold the upside down pcb and keep all the pots in position at this point?</p>
+  <img src="images/image_7_1.jpg" alt="Correct alignment">
+
+  <h2>8: Solder the small connections</h2>
+  <p>Now you are ready to solder all the small connections. This means:</p>
+  <ul>
+    <li>The pins of pots</li>
+    <li>The legs of LEDs</li>
+    <li><strong>NOT</strong> the MX Switches OR the legs of Pots.</li>
+  </ul>
+  <p>Use the thin solder.</p>
+  <img src="images/image_8_1.jpg" alt="Work in rows">
+
+  <h2>9: Solder the MX switches</h2>
+  <p>Now solder the pins of the MX switches using the thicker solder.</p>
+  <img src="images/image_9_1.jpg" alt="Finished MX switch">
+
+  <h2>10: Solder the pot legs</h2>
+  <p>Now solder the legs of the pots using the thicker solder.</p>
+  <img src="images/image_10_1.jpg" alt="Finished pot legs">
+
+  <h2>11: Snip the LED legs</h2>
+  <p>Using the clippers, snip of most of the LED legs.</p>
+  <p class="important">IMPORTANT: Do not clip too close to the board or you risk breaking the joint near the base of the leg.</p>
+  <img src="images/image_11_1.jpg" alt="Snipped Legs">
+
+  <h2>12: Test, Attach and Solder the daisySeed</h2>
+  <p>Take the daisy seed out of the anti static packet and plug it into your computer. One LED should blink.</p>
+  <p>Then disconnect it and attach it to the pins on the PCB. The USB port should face the center of the PCB.</p>
+  <p>Solder the 40 pins using thin solder.</p>
+  <p class="important">IMPORTANT: Be very careful with the soldering iron in this step. The daisyseed could be damaged leaving the entire board useless.</p>
+  <p class="note">NOTE: The daisy seed will not sit flush with the pins, this is normal and not a problem.</p>
+  <img src="images/image_12_1.jpg" alt="Proper placement">
+  <img src="images/image_12_2.jpg" alt="Normal gap from pins">
+
+  <h2>13: Test the pots, buttons and LEDs</h2>
+  <p>Upload the daisy bootloader here: <a href="https://flash.daisy.audio/">https://flash.daisy.audio/</a></p>
+  <p>Upload the testing firmware here: <a href="https://drive.google.com/file/d/1CnY1YiDEyK2dcatdi_ZK_ydABdMghqu1/view?usp=sharing">Testing Firmware</a></p>
+  <p>Go to <a href="https://gintronic-io.github.io/tsFactoryTest/">https://gintronic-io.github.io/tsFactoryTest/</a> and test the pots</p>
+  <p>Press each button and hold it until you have seen the LED flash Red, Green and Blue.</p>
+  <p>Once you are happy that everything works, upload the production firmware found here: <a href="https://drive.google.com/drive/folders/1q1CO7iVbR9dfujsEhkqUaVzR0Auif-II?usp=sharing">Production Firmware</a></p>
+
+  <h2>14: Attach the PCB to the enclosure</h2>
+  <p class="important">WARNING: PLEASE MAKE SURE YOU HAVE SOME BUBBLE WRAP UNDER THE ENCLOSURE AT ALL TIMES SO NOT TO SCRATCH THE PAINT!</p>
+  <p>Push the buttons and pots through the holes of the enclosure and attach a few of the pots with the nuts gently by hand just to get the PCB into place.</p>
+  <p>Then attach each pot to the enclosure using the nuts from before and the wrench.</p>
+  <p class="important">IMPORTANT: DO NOT PRESS DOWN WITH THE WRENCH OR YOU WILL MARK THE PAINT OF THE ENCLOSURE. IT IS ENOUGH JUST TO TURN THE WRENCH GENTLY. THE NUTS DO NOT NEED TO BE SUPER TIGHT.</p>
+  <img src="images/image_14_1.jpg" alt="Gently turning and attaching">
+
+  <h2>15: Wire the TRS Jacks</h2>
+  <p>Left channel = yellow<br>Right channel = red<br>Ground = black</p>
+  <p>Around 13cm should be enough for each wire, you will trim them to fit a little later.</p>
+  <img src="images/image_15_1.jpg" alt="The poles of the TRS jack">
+
+  <h2>16: Add the TRS jacks, power button and USB socket</h2>
+  <p>Screw in the Power button and add the USB socket. Make sure to align the USB socket with the red wire closest to the Power button.</p>
+  <img src="images/image_16_1.jpg" alt="USB socket example">
+  <p class="important">WARNING: IN THE IMAGE PROVIDED THE USB SOCKET IS THE WRONG WAY ROUND!!! I ONLY RECENTLY LEARNED THAT I SHOULD TRIP THE LIVE WIRE WITH THE POWER SWITCH AND NOT THE GROUND :D</p>
+
+  <h2>17: Solder the Audio TRS wires to the PCB</h2>
+  <p>First apply solder to the pads so that they are covered, then one by one, reheat that solder and push the correct wire through.</p>
+  <p class="important">IMPORTANT: MAKE SURE TO ADD HEAT SHRINK TO THE WIRE BEFORE SOLDERING. ALSO DON'T MAKE THE EXPOSED WIRE TOO LONG OR THEY MAY TOUCH IN THE OTHER SIDE WITHOUT YOU KNOWING.</p>
+  <img src="images/image_17_1.jpg" alt="Line in">
+  <img src="images/image_17_2.jpg" alt="Line out">
+  <img src="images/image_17_3.jpg" alt="Good wire length">
+
+  <h2>18: Solder the MIDI TRS wires to the PCB</h2>
+  <p>First apply solder to the pads so that they are covered, then one by one, reheat that solder and push the correct wire through.</p>
+  <p>With MIDI, yellow wire = 5, red wire = 4, black wire = ground</p>
+  <p class="important">IMPORTANT: MAKE SURE TO ADD HEAT SHRINK TO THE WIRE BEFORE SOLDERING. ALSO DON'T MAKE THE EXPOSED WIRE TOO LONG OR THEY MAY TOUCH IN THE OTHER SIDE WITHOUT YOU KNOWING.</p>
+  <p><em>Sorry, no image available yet</em></p>
+
+  <h2>19: Solder the USB wires to the PCB</h2>
+  <p>Using the same technique as with the TRS wires, attach the following:</p>
+  <ul>
+    <li>Black = GND</li>
+    <li>White = D-</li>
+    <li>Blue = D+</li>
+    <li>Green, Yellow = to the pins with the resistors</li>
+    <li>Red = DO NOT WIRE RED YET</li>
+  </ul>
+  <img src="images/image_19_1.jpg" alt="USB wiring example">
+
+  <h2>20: Solder the power switch</h2>
+  <p>Cut the red wire from the USB socket short and solder it to one leg of the power button (don’t forget to use heat shrink). Then with a new wire, solder the other leg of the power button to the V+ pad of the USB section.</p>
+
+  <h2>21: Close the enclosure</h2>
+  <p>Attach the lid to the bottom of the enclosure and screw it together. Paint may be in the screw holes so this might be difficult.</p>
+  <p class="important">IMPORTANT: DO NOT FORGET TO HAVE SOME KIND OF PROTECTION FOR THE ENCLOSURE ON YOUR WORK DESK AT ALL TIMES TO AVOID SCRATCHES IN THE PAINT.</p>
+
+  <h2>22: Attach the pot knobs</h2>
+  <p>Turn every pot all the way to the left and attach the knobs as seen in the image.</p>
+  <img src="images/image_22_1.jpg" alt="Pot knobs">
+  <img src="images/image_22_2.jpg" alt="Tightening knobs">
+
+</body>
+</html>
